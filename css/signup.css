@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: linear-gradient(rgba(123, 147, 245, 0.25), rgba(123, 147, 245, 0.25)), url(/imgs/oleg-ivanov-aVbR17HLZTg-unsplash\ 1\ \(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+:root {
+    --primary: #4263eb;
+    --secondary: #f1f5f6;
+  }
+  .txt-primary {
+    color: var(--primary);
+    font-family: "Mali", sans-serif;
+  }
+  .txt-brand {
+    color: #f784ad !important;
+    font-family: "Mali", sans-serif;
+    font-weight: bold;
+    font-size: 3.5em;
+    line-height: 65px;
+  }
+  .txt-links {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 500;
+    font-size: 1.125em;
+    line-height: 24px;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: #000;
+  }
+  section:nth-of-type(even) {
+    background-color: #f1f5f6;
+  }
+  section > h3 {
+    font-weight: 600;
+    font-size: 2.5em;
+    line-height: 40px;
+    color: #1e1e1e;
+  }
+  section > p {
+    font-weight: 600;
+    font-size: 1.563em;
+    line-height: 30px;
+    color: #828282;
+  }
+  /* btn pseudo styles */
+  .btn-primary:not(:disabled):not(.disabled):active:active {
+    background-color: var(--primary);
+    border: none;
+  }
+  .txt-links.btn-primary:hover {
+    background-color: var(--primary);
+    color: #fff;
+    opacity: 0.9;
+  }
+  .btn-primary:focus {
+    background-color: var(--primary);
+    border: none;
+    box-shadow: none;
+  }
+  .btn-primary:hover {
+    background-color: var(--primary);
+    border: none;
+    opacity: 0.9;
+  }
+  .hero-buttons .btn-clear:hover {
+    background-color: #82828223;
+  }
+  /* header styles */
+  .btn-primary {
+    display: table;
+    vertical-align: middle;
+    padding: 14px 20px;
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+  }
+  ul.navbar-nav:first-of-type > li {
+    padding-right: 1em;
+  }
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 1.8s;
+    --ainmate-delay: 0.5s;
+  }
+  /* navbar hover effects */
+  .txt-links li a:hover {
+    color: #000;
+  }
+  .txt-links li a:hover:after {
+    opacity: 1;
+    width: 100%;
+  }
+  .txt-links li a:after {
+    transition: all 0.3s ease;
+    opacity: 0;
+    border-top: 2px solid var(--primary);
+    content: "";
+    display: block;
+    z-index: -1;
+    margin: auto;
+    width: 0px;
+  }
+  .txt-links li a:after {
+    top: 5px;
+  }
+section{
+    margin-right: 90px;
+    margin-bottom: 297px !important;
+}
+section .container-fluid form{
+    background: #fff;
+}
+#intro-text{
+    padding: 93px;
+}
+#intro-text2{
+    padding: 50px;
+}
+.card{
+    border-radius: 5px !important;
+}
+.card-top{
+    background: #4263EB !important;
+    border-radius: 5px 5px 0px 0px;
+    padding: 32px;
+    font-size: 20px !important;
+}
+.inactive{
+    padding-top: 5px;
+}
+.active, .inactive a:hover{
+    font-size: 30px !important;
+}
+a{
+    text-decoration: none !important;
+}
+.active.active{
+    font-size: 30px !important;
+}
+
+.radiobutts{
+   padding-bottom: 30px;
+}
+form button .btn, .btn-primary{
+    background: #4263EB !important;
+    box-shadow: 0px 1.85609px 3.71218px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 7.42435px !important;
+}
+form button .btn, .btn-primary:hover{
+    background: #283774 !important;
+}
+.form-control{
+    border-radius: 7.42435px !important;
+}
+.form-check a{
+    color: #7048E8 !important
+}
+.form-check a:hover{
+    color: #283774 !important;
+}
+p a{
+    color: #7048E8 !important
+}
+p a:hover{
+    color: #283774 !important;
+}
+footer{
+    background: #283774;
+    color: white !important
+}
+footer a{
+    color: white !important
+}
+footer a:hover{
+    color: #9daceb!important
+}
+#vline{
+    border-right: 1px solid #fff;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 667px){
+    .navbar-brand{
+        font-size: 2.25rem !important;
+    }
+    #Zuri-logo{
+        display: none !important;
+    }
+    .card-top{
+        display: none !important;
+    }
+    form{
+        font-size: small;
+    }
+    #intro-text{
+        padding: 20px !important;
+        margin-bottom: 253px !important;
+    }
+    #intro-text .display-2{
+        font-size: 38px !important;
+        font-weight: bolder;
+        padding-top: 53px !important;
+        padding-bottom: 21px !important;
+        display: flex;
+        text-align: center;
+    }
+    #intro-text .display-5{
+        font-size: 21.1px !important;
+    }
+    section{
+        padding-bottom: 20px !important;
+    }
+    #main-view{
+        display: none !important;
+    }
+    .footer-desktop{
+        display: none !important;
+    }
+    .footer-mobile{
+        display: block !important;
+    }
+    .txt-brand{
+        font-size: 2.1rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .navbar-brand{
+        font-size: 2.25rem !important;
+    }
+    #Zuri-logo{
+        display: none !important;
+    }
+    section{
+        margin: 0 !important;
+        margin-bottom: 100px !important;
+        font-size: small;
+    }
+    .card-top{
+        display: none !important;
+    }
+    form .d-inline-block .py-2{
+        padding: none !important;
+    }
+    section .container-fluid .card{
+        background: rgba(255, 255, 255, 0.589) !important;
+    }
+    section .container-fluid form{
+        background: rgba(255, 255, 255, 0.589) !important;
+    }
+    #intro-text{
+        padding: 20px !important;
+        margin-bottom: 123px !important;
+        width: 78% !important;
+    }
+    #intro-text2{
+        width: 100% !important;
+    }
+    #intro-text .display-2{
+        font-size: 38px !important;
+        font-weight: bolder;
+        padding-top: 53px !important;
+        padding-bottom: 21px !important;
+        display: flex;
+        text-align: center;
+    }
+    #intro-text .display-5{
+        font-size: 21.1px !important;
+    }
+    #intro-text2 .display-3{
+        font-size: 38px !important;
+        font-weight: bolder;
+
+    }
+    #intro-text2 .display-5{
+        font-size: 15px !important;
+    }
+    footer{
+        display: block !important;
+    }
+    .footer-desktop{
+        display: none !important;
+    }
+    .footer-mobile{
+        display: block !important;
+    }
+}
+@media only screen and (min-width: 992px){
+    .navbar-brand{
+        font-size: 2.25rem !important;
+    }
+    .d-lg-flex{
+        display: none !important;
+    }
+    .card-top h3{
+        font-size: large !important;
+    }
+    .card-top .active{
+        font-size: 22px !important;
+    }
+    .footer-desktop{
+        display: block !important;
+    }
+    .footer-mobile{
+        display: none !important;
+    }
+    
+}
